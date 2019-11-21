@@ -1,4 +1,5 @@
 /* General Style */
+
 :root {
     --primary-color: #333;
     --secondary-color: #444;
@@ -56,6 +57,16 @@ img {
 .btn:hover {
     background-color: var(--secondary-color);
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+
 /* Navigation bar */
 
 .navbar {
@@ -88,14 +99,15 @@ img {
     color: #555;
 }
 
-/* Showcase area */
+/* Showcase Section */
+
 .section-a {
     margin: 2rem 0;
 }
 
 .section-a .container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
     align-items: center;
     justify-content: center;
@@ -108,4 +120,39 @@ img {
 
 .section-a p {
     margin: 1rem 0;
+}
+
+/* Overlay section */
+
+.section-b {
+    position: relative;
+    background-image: url('../img/section-b.jpg');
+    /* bottom center/cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 600px;
+}
+
+.section-b-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    padding: 5rem 0;
+}
+
+.section-b-inner h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.section-b-inner p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
