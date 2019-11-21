@@ -126,8 +126,9 @@ img {
 
 .section-b {
     position: relative;
-    background-image: url('../img/section-b.jpg');
-    /* bottom center/cover; */
+    /* background: url('../img/section-b.jpg') no-repeat bottom center/cover; */
+    
+    background-image:url('../img/section-b.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
